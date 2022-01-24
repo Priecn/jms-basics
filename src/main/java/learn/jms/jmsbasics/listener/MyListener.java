@@ -32,7 +32,7 @@ public class MyListener {
     }
 
 
-    @JmsListener(destination = JMSConfig.MY_SEND_RCV_QUEUE)
+    // @JmsListener(destination = JMSConfig.MY_SEND_RCV_QUEUE)
     public void listenAndReply(@Payload MyMessage myMessage,
                        @Headers MessageHeaders headers,
                        Message message) throws JMSException {
